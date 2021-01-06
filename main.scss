@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./taxedu.jpg');
+  background-size: cover;
+  
+}
+h1 {
+  margin: 0 auto 50px;
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+.calculator-container {
+  display: grid;
+  background: rgb(56, 54, 54);
+  height: 570px;
+  width: 375px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+  gap: 10px;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: minmax(90px, auto) repeat(5, 80px);
+
+  button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 2px white;
+
+    &:hover {
+      background-color: rgb(75, 45, 60);
+    }
+  }
+  button.span-two {
+    background-color: orange;
+    color: black;
+    border-radius: 50px;    
+
+    &:hover {
+      background-color: rgb(209, 128, 34);
+      color: black;
+    }
+  }
+  button.zero {
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: rgb(75, 45, 60);
+      color: white;
+    }
+  }
+  button.op{
+    background-color: rgb(0, 110, 255);
+    &:hover {
+      background-color:skyblue;
+    }
+  }
+  button.del{
+   background-color:orange;
+   color: black;
+   &:hover {
+     background-color:rgb(209, 128, 34);
+   }
+  }
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 /-1;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  .previous-operand {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .current-operand {
+    color: black;
+    font-size: 2.5rem;
+  }
+}

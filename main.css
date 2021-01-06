@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./taxedu.jpg");
+  background-size: cover;
+}
+
+h1 {
+  margin: 0 auto 50px;
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+
+.calculator-container {
+  display: -ms-grid;
+  display: grid;
+  background: #383636;
+  height: 570px;
+  width: 375px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+  gap: 10px;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: minmax(90px, auto) (80px)[5];
+      grid-template-rows: minmax(90px, auto) repeat(5, 80px);
+}
+
+.calculator-container button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  outline: none;
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 0 0 2px white;
+          box-shadow: 0 0 2px white;
+}
+
+.calculator-container button:hover {
+  background-color: #4b2d3c;
+}
+
+.calculator-container button.span-two {
+  background-color: orange;
+  color: black;
+  border-radius: 50px;
+}
+
+.calculator-container button.span-two:hover {
+  background-color: #d18022;
+  color: black;
+}
+
+.calculator-container button.zero {
+  background-color: black;
+  color: white;
+}
+
+.calculator-container button.zero:hover {
+  background-color: #4b2d3c;
+  color: white;
+}
+
+.calculator-container button.op {
+  background-color: #006eff;
+}
+
+.calculator-container button.op:hover {
+  background-color: skyblue;
+}
+
+.calculator-container button.del {
+  background-color: orange;
+  color: black;
+}
+
+.calculator-container button.del:hover {
+  background-color: #d18022;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 /-1;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: black;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */
