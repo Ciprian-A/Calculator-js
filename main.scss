@@ -4,32 +4,48 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   background-image: url('./taxedu.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
   
 }
 h1 {
-  margin: 0 auto 50px;
+  display: flex;
+  margin: 0 auto 30px;
   text-align: center;
   color: white;
-  background-color: grey;
+  justify-content: center;
 }
 .calculator-container {
   display: grid;
   background: rgb(56, 54, 54);
-  height: 570px;
-  width: 375px;
+  height: 420px;
+  width: 255px;
   margin: auto;
   padding: 10px;
   border-radius: 25px;
   border: 2px solid black;
   gap: 10px;
-  grid-template-columns: repeat(4,80px);
-  grid-template-rows: minmax(90px, auto) repeat(5, 80px);
+  grid-template-columns: repeat(4,50px);
+  grid-template-rows: minmax(90px, auto) repeat(5, 50px);
 
   button {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border: 1px solid black;
     border-radius: 50%;
     outline: none;
