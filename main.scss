@@ -58,13 +58,13 @@ h1 {
     }
   }
   button.span-two {
-    background-color: orange;
+    background-color: grey;
     color: black;
     border-radius: 50px;    
 
     &:hover {
-      background-color: rgb(209, 128, 34);
-      color: black;
+      background-color: rgb(48, 40, 40);
+      color: white;
     }
   }
   button.zero {
@@ -76,16 +76,18 @@ h1 {
     }
   }
   button.op{
-    background-color: rgb(0, 110, 255);
+    background-color: orange;
+    color: black;
     &:hover {
-      background-color:skyblue;
+      background-color:rgb(235, 183, 135);
     }
   }
   button.del{
-   background-color:orange;
+   background-color:grey;
    color: black;
    &:hover {
-     background-color:rgb(209, 128, 34);
+     background-color:rgb(48, 40, 40);
+     color: white;
    }
   }
 }

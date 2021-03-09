@@ -71,14 +71,14 @@ h1 {
 }
 
 .calculator-container button.span-two {
-  background-color: orange;
+  background-color: grey;
   color: black;
   border-radius: 50px;
 }
 
 .calculator-container button.span-two:hover {
-  background-color: #d18022;
-  color: black;
+  background-color: #302828;
+  color: white;
 }
 
 .calculator-container button.zero {
@@ -92,20 +92,22 @@ h1 {
 }
 
 .calculator-container button.op {
-  background-color: #006eff;
-}
-
-.calculator-container button.op:hover {
-  background-color: skyblue;
-}
-
-.calculator-container button.del {
   background-color: orange;
   color: black;
 }
 
+.calculator-container button.op:hover {
+  background-color: #ebb787;
+}
+
+.calculator-container button.del {
+  background-color: grey;
+  color: black;
+}
+
 .calculator-container button.del:hover {
-  background-color: #d18022;
+  background-color: #302828;
+  color: white;
 }
 
 .span-two {
